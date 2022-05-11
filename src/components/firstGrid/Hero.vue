@@ -4,13 +4,13 @@
     <picture>
       <source
         media="(min-width:600px)"
-        srcset="../assets/images/bg/white-d.jpg"
+        srcset="../../assets/images/bg/white-d.jpg"
       />
       <source
         media="(min-width:310px)"
-        srcset="../assets/images/bg/white-m.jpg"
+        srcset="../../assets/images/bg/white-m.jpg"
       />
-      <img src="../assets/images/bg/white-d.jpg" alt="#" />
+      <img src="../../assets/images/bg/white-d.jpg" alt="#" />
     </picture>
 
     <!-- Navbar and Menu -->
@@ -22,7 +22,7 @@
             <ion-icon name="menu-sharp"></ion-icon>
           </button>
           <div>
-            <img src="../assets/images/svg/logo.svg" alt="menu button" />
+            <img src="../../assets/images/svg/logo.svg" alt="menu button" />
           </div>
         </div>
       </nav>
