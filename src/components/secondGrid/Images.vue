@@ -15,7 +15,9 @@
 </template>
 
 <script>
+import About from "../secondGrid/About.vue";
 export default {
   name: "Images",
+  components: { About },
 };
 </script>
