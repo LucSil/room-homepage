@@ -28,24 +28,28 @@
       </nav>
 
       <!-- Modal Background -->
-      <div v-if="menu" class="fixed inset-0 bg-black opacity-60 z-20"></div>
+      <transition name="modal">
+        <div v-if="menu" class="fixed inset-0 bg-black opacity-60 z-20"></div>
+      </transition>
 
       <!-- menu close and nav-links -->
-      <div
-        v-if="menu"
-        id="nav-menu-items"
-        class="bg-white absolute z-30 top-0 w-full px-5 flex justify-between items-center py-10"
-      >
-        <button @click="closeMenu" id="close-menu" class="mr-14">
-          <ion-icon name="close"></ion-icon>
-        </button>
-        <ul id="nav-links" class="flex justify-between items-center w-full">
-          <li><a href="#">home</a></li>
-          <li><a href="#">shop</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </div>
+      <transition name="menu">
+        <div
+          v-if="menu"
+          id="nav-menu-items"
+          class="bg-white absolute z-30 top-0 w-full px-5 flex justify-between items-center py-10"
+        >
+          <button @click="closeMenu" id="close-menu" class="mr-14">
+            <ion-icon name="close"></ion-icon>
+          </button>
+          <ul id="nav-links" class="flex justify-between items-center w-full">
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </transition>
     </div>
   </section>
 </template>
@@ -74,3 +78,31 @@ export default {
   },
 };
 </script>
+
+<style>
+/* Modal Transition */
+.modal-enter-from,
+.modal-leave-to {
+  transform: translateY(-200px);
+  opacity: 0;
+}
+.modal-enter-active {
+  transition: all 0.3s ease-in-out;
+}
+.modal-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+
+/* Mobile Menu Transition */
+.menu-enter-from,
+.menu-leave-to {
+  transform: translateY(-200px);
+  opacity: 0;
+}
+.menu-enter-active {
+  transition: all 0.4s ease-in-out;
+}
+.menu-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+</style>
