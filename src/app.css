@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-spartan text-xs;
+  @apply font-spartan text-xs cursor-default;
 }
 img {
   @apply w-full;
