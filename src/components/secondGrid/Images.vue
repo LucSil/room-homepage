@@ -1,33 +1,16 @@
 <template>
   <section>
     <!-- 1st -->
-    <picture>
-      <source
-        media="(min-width:600px)"
-        srcset="../../assets/images/bg/black-d.jpg"
-      />
-      <source
-        media="(min-width:310px)"
-        srcset="../../assets/images/bg/black-m.jpg"
-      />
-      <img src="../../assets/images/bg/black-d.jpg" alt="#" />
-    </picture>
-
+    <div>
+      <img src="../../assets/images/bg/1.jpg" alt="#" />
+    </div>
     <!-- 2nd -->
     <About />
 
     <!-- 3rd -->
-    <picture>
-      <source
-        media="(min-width:600px)"
-        srcset="../../assets/images/bg/white-d.jpg"
-      />
-      <source
-        media="(min-width:310px)"
-        srcset="../../assets/images/bg/white-m.jpg"
-      />
-      <img src="../../assets/images/bg/white-d.jpg" alt="#" />
-    </picture>
+    <div>
+      <img src="../../assets/images/bg/2.jpg" alt="#" />
+    </div>
   </section>
 </template>
 
