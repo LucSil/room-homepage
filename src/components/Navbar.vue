@@ -8,7 +8,7 @@
           <ion-icon name="menu-sharp"></ion-icon>
         </button>
         <div>
-          <img src="../../assets/images/svg/logo.svg" alt="menu button" />
+          <img src="../assets/images/svg/logo.svg" alt="menu button" />
         </div>
       </div>
     </nav>
@@ -42,7 +42,52 @@
 <script>
 export default {
   name: "Navbar",
+  data() {
+    return {
+      menu: false,
+    };
+  },
+  methods: {
+    openMenu() {
+      if (!this.menu) {
+        this.menu = true;
+        document.body.classList.add("overflow-y-hidden");
+      }
+    },
+    closeMenu() {
+      if (this.menu) {
+        this.menu = false;
+        document.body.classList.remove("overflow-y-hidden");
+      }
+    },
+  },
 };
 </script>
 
-<style></style>
+<style>
+/* Modal Transition */
+.modal-enter-from,
+.modal-leave-to {
+  transform: translateY(-200px);
+  opacity: 0;
+}
+.modal-enter-active {
+  transition: all 0.3s ease-in-out;
+}
+.modal-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+
+/* Mobile Menu Transition */
+.menu-enter-from,
+.menu-leave-to {
+  transform: translateY(-200px);
+  opacity: 0;
+}
+.menu-enter-active {
+  transition: all 0.4s ease-in-out;
+}
+.menu-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+</style>
