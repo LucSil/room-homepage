@@ -19,3 +19,13 @@ img {
 #nav-links li {
   @apply text-base;
 }
+#switch {
+  @apply absolute bottom-0 right-0 bg-black flex justify-center items-center;
+}
+#switch button {
+  @apply grid place-items-center p-4;
+}
+#next,
+#previous {
+  @apply text-gray-300 text-2xl;
+}

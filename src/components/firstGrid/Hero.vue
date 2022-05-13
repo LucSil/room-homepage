@@ -13,6 +13,16 @@
       <img src="../../assets/images/bg/white-d.jpg" alt="#" />
     </picture>
 
+    <!-- Image Switch Buttons -->
+    <div id="switch">
+      <button>
+        <ion-icon id="previous" name="chevron-back-sharp"></ion-icon>
+      </button>
+      <button>
+        <ion-icon id="next" name="chevron-forward-sharp"></ion-icon>
+      </button>
+    </div>
+
     <!-- Navbar and Menu -->
     <div id="hero-items" class="absolute z-10 top-0 w-full">
       <nav class="mt-12">
