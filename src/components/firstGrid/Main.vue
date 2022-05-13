@@ -14,8 +14,9 @@
     </div>
 
     <!-- Link to "SHOP NOW" -->
-    <div>
+    <div class="flex items-center">
       <span class="text-base tracking-[0.5rem]">SHOP NOW</span>
+      <span class="text-3xl text-gray-500 ml-10">&#10230;</span>
     </div>
   </section>
 </template>
