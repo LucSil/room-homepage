@@ -6,7 +6,7 @@
       <picture id="one">
         <source
           media="(min-width:600px)"
-          srcset="../../assets/images/bg/white-m.jpg"
+          srcset="../../assets/images/bg/white-d.jpg"
         />
         <source
           media="(min-width:310px)"
