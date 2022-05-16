@@ -15,7 +15,11 @@
 
     <!-- Modal Background -->
     <transition name="modal">
-      <div v-if="menu" class="fixed inset-0 bg-black opacity-60 z-20"></div>
+      <div
+        @click="closeMenu"
+        v-if="menu"
+        class="fixed inset-0 bg-black opacity-60 z-20"
+      ></div>
     </transition>
 
     <!-- menu close and nav-links -->
