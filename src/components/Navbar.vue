@@ -1,7 +1,8 @@
 <template>
   <!-- Navbar and Menu -->
   <div id="hero-items" class="absolute z-10 top-0 w-full">
-    <nav class="mt-12">
+    <!-- mobile -->
+    <nav class="mt-12 sm:hidden">
       <!-- menu open and logo -->
       <div id="mobile-menu" class="flex items-center justify-center">
         <button @click="openMenu" id="hamburger" class="absolute left-0 ml-5">
@@ -12,7 +13,18 @@
         </div>
       </div>
     </nav>
-
+    <!-- desktop -->
+    <nav class="hidden sm:flex items-center mt-14 px-16">
+      <div class="mr-12">
+        <img src="../assets/images/svg/logo.svg" alt="menu button" />
+      </div>
+      <ul id="desk-links" class="flex justify-between items-center w-[40%]">
+        <li><a href="#">home</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
     <!-- Modal Background -->
     <transition name="modal">
       <div

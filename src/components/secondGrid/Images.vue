@@ -1,14 +1,15 @@
 <template>
-  <section>
+  <section class="lg:grid grid-cols-10">
     <!-- 1st -->
-    <div>
+    <div class="col-span-3">
       <img src="../../assets/images/bg/1.jpg" alt="#" />
     </div>
+
     <!-- 2nd -->
-    <About />
+    <About class="col-span-4" />
 
     <!-- 3rd -->
-    <div>
+    <div class="col-span-3">
       <img src="../../assets/images/bg/2.jpg" alt="#" />
     </div>
   </section>

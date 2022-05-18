@@ -8,24 +8,36 @@ body {
   @apply font-spartan text-xs cursor-default scroll-smooth;
 }
 img {
-  @apply w-full;
+  @apply w-full h-full;
 }
 #hamburger {
-  @apply text-3xl text-white grid;
+  @apply text-3xl text-white grid sm:hidden;
 }
 #close-menu {
-  @apply text-3xl text-gray-300 grid;
+  @apply text-3xl text-gray-300 grid sm:hidden;
 }
 #nav-links li {
   @apply text-base;
 }
+#desk-links li {
+  @apply text-white text-base;
+}
 #switch {
-  @apply absolute bottom-0 right-0 bg-black flex justify-center items-center;
+  @apply absolute bottom-0 right-0 lg:-right-[8.5rem] bg-black flex justify-center items-center;
 }
 #switch button {
-  @apply grid place-items-center p-4;
+  @apply grid place-items-center p-4 lg:py-5;
 }
 #next,
 #previous {
-  @apply text-gray-300 text-2xl;
+  @apply text-gray-300 text-2xl lg:text-4xl;
+}
+.mainText {
+  @apply mb-10;
+}
+.mainText h1 {
+  @apply text-3xl leading-7 font-medium mb-4;
+}
+.mainText p {
+  @apply text-gray-400 text-sm;
 }
