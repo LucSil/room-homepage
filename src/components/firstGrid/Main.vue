@@ -38,7 +38,7 @@
           </p>
         </div>
       </agile>
-      <a href="#" class="flex items-center group">
+      <a href="#" class="flex items-center group lg:w-[60%]">
         <span class="group-hover:text-gray-400 text-base tracking-[0.5rem]"
           >SHOP NOW</span
         >

@@ -84,7 +84,6 @@ export default {
 /* Modal Transition */
 .modal-enter-from,
 .modal-leave-to {
-  transform: translateY(-200px);
   opacity: 0;
 }
 .modal-enter-active {
