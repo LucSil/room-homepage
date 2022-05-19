@@ -28,15 +28,18 @@ img {
 #switch button {
   @apply grid place-items-center p-4 lg:py-5;
 }
+#switch button:hover {
+  @apply bg-gray-500 transition duration-75 ease-linear;
+}
 #next,
 #previous {
   @apply text-gray-300 text-2xl lg:text-4xl;
 }
 .mainText {
-  @apply mb-10;
+  @apply mb-10 lg:mb-6;
 }
 .mainText h1 {
-  @apply text-3xl leading-7 font-medium mb-4;
+  @apply text-3xl lg:text-[2.8rem] font-medium mb-6;
 }
 .mainText p {
   @apply text-gray-400 text-sm;

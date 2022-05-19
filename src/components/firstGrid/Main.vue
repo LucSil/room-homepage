@@ -1,7 +1,7 @@
 <template>
-  <section class="px-10 py-16 lg:py-0">
+  <section class="px-10 py-16 lg:py-0 lg:px-[4.7rem]">
     <!-- Div containing title and further information -->
-    <div class="relative lg:top-[30%]">
+    <div class="relative lg:top-[25%]">
       <agile :navButtons="false" ref="carousel">
         <!-- Slide 1 -->
         <div class="mainText">
@@ -38,10 +38,14 @@
           </p>
         </div>
       </agile>
-      <div class="flex items-center">
-        <span class="text-base tracking-[0.5rem]">SHOP NOW</span>
-        <span class="text-3xl text-gray-500 ml-10">&#10230;</span>
-      </div>
+      <a href="#" class="flex items-center group">
+        <span class="group-hover:text-gray-400 text-base tracking-[0.5rem]"
+          >SHOP NOW</span
+        >
+        <span class="group-hover:text-gray-400 text-3xl text-gray-500 ml-10"
+          >&#10230;</span
+        >
+      </a>
     </div>
 
     <!-- Link to "SHOP NOW" -->
