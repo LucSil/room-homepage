@@ -59,18 +59,8 @@
 
 <script>
 import Navbar from "../Navbar.vue";
-import { VueAgile } from "vue-agile";
 export default {
   name: "Hero",
-  components: { Navbar, agile: VueAgile },
-  data() {
-    return {
-      val: 1,
-    };
-  },
-  methods: {
-    prev() {},
-    next() {},
-  },
+  components: { Navbar },
 };
 </script>

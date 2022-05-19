@@ -2,7 +2,7 @@
   <section class="px-10 py-16 lg:py-0 lg:px-[4.7rem]">
     <!-- Div containing title and further information -->
     <div class="relative lg:top-[25%]">
-      <agile :navButtons="false" ref="carousel">
+      <agile :navButtons="false" ref="text">
         <!-- Slide 1 -->
         <div class="mainText">
           <h1>Discover innovative ways to decorate</h1>
@@ -38,6 +38,7 @@
           </p>
         </div>
       </agile>
+
       <a href="#" class="flex items-center group lg:w-[60%]">
         <span class="group-hover:text-gray-400 text-base tracking-[0.5rem]"
           >SHOP NOW</span
@@ -53,10 +54,7 @@
 </template>
 
 <script>
-import { VueAgile } from "vue-agile";
-
 export default {
   name: "Main",
-  components: { agile: VueAgile },
 };
 </script>
